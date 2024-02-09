@@ -1,6 +1,6 @@
 # C-Infotech
 
-<b>This repository consists of all the tasks completed for the remote internship for Web Devlopment Position with CODETECH IT SOLUTIONS.</b>
+<b>This repository consists of all the tasks completed for the internship for FullStack Devlopment Position with C-Infotech.</b>
 <br>
 <p><b>The list of tasks completed is as follows:</b></p>
 <ol type="1">
