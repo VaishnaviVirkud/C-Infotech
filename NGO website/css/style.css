@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sofia:wght@light 300 Italic;Regular 400 Italic&display=swap');
+
+*,
+*:after,
+*:before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--secondary-color) ;
+}
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+/*=====Variable define=====*/
+
+:root{
+    --primary-color: #FF8E2B;
+    --secondary-color: #0D2137; 
+    --third-color: #2E77AE;
+    --light-color: #E0EAF5;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #021024;
+    --text-light-color: #555;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Sofia', sans-serif;
+}
+/*=====Variable define=====*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+/*=====Custom CSS=====*/
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--white-color);
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: var(--secondary-color);
+    color: var(--secondary-color);
+    line-height: 3rem;
+}
+
+h4{
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+h5{
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+p{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.main-btn{
+    display: inline;
+    padding: 0.625rem 0.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    border-radius: 10px;
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    min-height: 30px;
+    min-width: 120px;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.white-btn{
+    padding: 0.625rem 0.875rem;
+    line-height: 25px;
+    background-color: var(--white-color);
+    border: 0.1875rem solid var(--white-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    min-height: 30px;
+    min-width: 120px;
+    box-shadow: 0px 2px 10px -px rgb(0, 0, 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover{
+    background-color: var(--white-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.white-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-color: var(--white-color);
+}
+
+.wrapper{
+    padding-top:8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.text-content{
+    width: 70%;
+    margin: auto;
+}
+
+/*=====Custom CSS=====*/
+
+/*****header Section*****/
+
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header-wrapper .navbar{
+padding: 0.9375rem 0; /*top-bottom lft-ryt*/
+-o-transition: all .2s linear ;
+-webkit-transition: all .2s linear;
+transition: all .2s linear;
+}
+
+.header-wrapper .navbar-brand{
+font-size: 1.2375rem;
+font-weight: 600;
+text-transform: capitalize;
+color: var(--text-color);
+letter-spacing: 1px;
+}
+
+.header-wrapper .navbar-toggler:focus{
+box-shadow: none;
+}
+
+.navigation-wrap .nav-item{
+padding: 0 0.625rem;
+transition: all 200ms linear;
+}
+
+.header-wrapper .nav-item .nav-link{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+.header-wrapper .nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.nav-link::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: auto;
+    display: block;
+}
+
+.nav-link:hover::after{
+    width: 90%;
+    transition: width 0.3s linear;
+}
+
+.navigation-wrap .main-btn{
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+/*----change navbar styling on scroll---*/
+.navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.09);
+    transition: all .15s ease-in-out 0s;
+}
+
+/*--x--change navbar styling on scroll--x-*/
+
+/*----Top-Banner---*/
+
+.top-banner{
+    width: 100%;
+    background: url('../assets/bg_2.jpg') no-repeat center;
+    background-size: cover;
+    padding: 12.875rem 0 10.375rem;
+    opacity: 0.9;
+}
+
+.top-banner p{
+    color: var(--white-color);
+}
+
+.top-banner h1{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.top-banner h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform:capitalize;
+    font-family: var(--secondary-color);
+    color: var(--secondary-color);
+    line-height: 3rem;
+}
+
+.top-banner h4{
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+}
+
+.top-banner .btn-content{
+    font-family: var(--primary-font);
+}
+/*----x--Top-Banner--x---*/
+
+/*----About-Section---*/
+
+.about-section .card,
+.about-section .card img{
+    height: 25rem;
+    border-radius: 0.625rem;
+}
+
+.about-section{
+    background: var(--white-color);
+}
+
+.about-section h2{
+    font-size: 3rem;
+}
+
+.about-section .text-secondary{
+    padding-left: 2rem;
+}
+
+/*----About-Section----*/
+
+/*----service-----*/
+
+.service-section h2{
+    color: var(--white-color);
+}
+
+.service-section{
+    background: var(--primary-color); 
+}
+
+.service-section .carousel-item{
+    margin-top: 3rem;
+    padding: 10rem 3.125rem;
+    background-color: var(--white-color);
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+
+.service-section .carousel-item .carousel-caption img{
+    max-width: 10rem;
+    border-radius: 80%;
+    padding: 80rem 0 0 0;
+}
+
+.service-section .carousel-item .carousel-caption p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    line-height: 1.2rem;
+    padding: 1rem 11% 0.625rem;
+}
+
+.service-section .carousel-indicators{
+    bottom: -2.8125rem;
+}
+
+.service-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+
+.service-section .carousel-indicators button.active{
+    opacity: 1;
+}
+/*----service-----*/
+
+/*-------donate-----*/
+
+.donate-section{
+    width: 55%;
+    margin: 0 auto;
+}
+
+.donate-section h1{
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.donate-section-section i{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    line-height: 32px;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+.donate-section h4{
+    text-align: center;
+}
+
+.donate-section.form-control{
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem; 
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border: 0.1875rem solid var(--text-gray);
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+.donate-section .form-control:hover,
+.donate-section .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border: 2px solid var(--secondary-color);
+}
+
+/*-----events-section----*/
+
+.events-section{
+    background-color: var(--light-color);
+}
+
+.events-section .card{
+    border: none;
+    background-color: var(--white-color);
+    border-radius: 0.9375rem;
+}
+
+.events-section .card img{
+    height: 15rem;
+    border-radius: 0.9375rem;
+    object-fit: cover;
+}
+
+
+.events-section .card{
+    border: none;
+    background-color: var(--white-color);
+    border-radius: 0.9375rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.events-section .card-content button{
+   margin-bottom: 15px;
+   border-radius: 10px;
+   margin-left: 5px;
+}
+
+/*----contact-section-----*/
+
+.contact-section img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.contact{
+    width: 100%;
+}
+
+.contact-section .card{
+    border: none;
+}
+
+.contact .form-control{
+    height: 2.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem; /*0.875rem = 14 px*/
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border: 0.1875rem solid var(--secondary-color);
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+.contact .form-control:hover,
+.contact .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+.contact button{
+    width: 50%;
+    padding: 5px 1px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+
+/*----footer-section----*/
+
+.footer{
+    background: var(--light-color);
+}
+
+.footer .footer-link{
+    font-size: 1rem;
+    color: var(--secondary-color);
+    padding: 0 1.875rem;
+}
+
+.footer .footer-link a:hover{
+    color: var(--secondary-color);
+}
+
+.footer a i{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    padding: 0 1rem;
+}
